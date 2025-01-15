@@ -21,8 +21,8 @@ class Program
         student.VizualizareNote();
         Console.WriteLine($"Media Anuala:{student.CalculeazaMediaAnuala(1)}");
         
-        
-        
-        
+        var contestatie=new Contestatie(disciplinaObligatorie.Note[0],"Nota este prea mica");
+        contestatie.RezolvaContestaia(true,10);
+        contestatie.AfiseazaStare();
     }
 }
